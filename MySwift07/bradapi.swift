@@ -16,6 +16,10 @@ struct Point {
 struct Point2 {
     var x:Int
     var y:Int
+    mutating func setX(newx:Int){
+        if newx >= 100 || newx < 0 {return }
+        x = newx
+    }
 }
 struct Line {
     var p0:Point2
