@@ -64,8 +64,47 @@ print(s1.sum())
 print(s1.avg())
 print(s1)
 
+var b1 = Brad01()
+var b2 = Brad02()
+b2.doP2()
+b2.doP2()
 
+var b3 = Brad04()
+print(b3.v1.x)
+print(b3.v1.y)
+print(b3.v2.x)
+print(b3.v2.y)
+print("------")
+b3.v1.x = 123
+print(b3.v1.x)
+print(b3.v2.x)
+print("------")
+b3.v2.x = 100
+print(b3.v2.x)
+var s2 = MyScore(x:70,y:30, z:40)
+print(s2.sum)
+print(s2.avg)
+s2.y = 100
+print(s2.sum)
+print(s2.avg)
+var b5 = Brad05()
+b5.x = 100
+print(b5.x)
 
+var b6 = Sub1()
+print(b6.a)
+print(b6.b)
+print(b6.getA())
+
+var b71:Super2? = Super2()
+var b72:Super2? = Super2()
+var b73 = Super2()
+var b74 = Super2()
+print(Super2.counter)
+print(b71!.a)
+b71 = nil
+b72 = nil
+print(Super2.counter)
 
 
 
