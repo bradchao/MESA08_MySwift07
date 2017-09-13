@@ -106,8 +106,28 @@ b71 = nil
 b72 = nil
 print(Super2.counter)
 
+var b8 = Brad06()
+print(b8.x1)
+print(Brad06.x1)
+b8.m1()
+print("-----")
+print(b8.x1)
+print(Brad06.x1)
+Brad06.m1()
+print("-----")
+print(b8.x1)
+print(Brad06.x1)
+b8.m1()
+print("-----")
+print(b8.x1)
+print(Brad06.x1)
 
-
+var myId = "A123456789"
+if TWId.isRightId(id: myId) {
+    var id1 = TWId(id: myId)
+}else{
+   var id2 = TWId()
+}
 
 
 

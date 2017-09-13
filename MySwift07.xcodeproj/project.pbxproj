@@ -11,6 +11,7 @@
 		372FB7BC1F68BDF80041D8D5 /* enumtest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372FB7BB1F68BDF80041D8D5 /* enumtest.swift */; };
 		372FB7BE1F68C68B0041D8D5 /* bradapi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372FB7BD1F68C68B0041D8D5 /* bradapi.swift */; };
 		372FB7C01F68D6E60041D8D5 /* MyClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372FB7BF1F68D6E60041D8D5 /* MyClasses.swift */; };
+		372FB7C21F6918730041D8D5 /* TWId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372FB7C11F6918730041D8D5 /* TWId.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		372FB7BB1F68BDF80041D8D5 /* enumtest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = enumtest.swift; sourceTree = "<group>"; };
 		372FB7BD1F68C68B0041D8D5 /* bradapi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bradapi.swift; sourceTree = "<group>"; };
 		372FB7BF1F68D6E60041D8D5 /* MyClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyClasses.swift; sourceTree = "<group>"; };
+		372FB7C11F6918730041D8D5 /* TWId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TWId.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				372FB7BB1F68BDF80041D8D5 /* enumtest.swift */,
 				372FB7BD1F68C68B0041D8D5 /* bradapi.swift */,
 				372FB7BF1F68D6E60041D8D5 /* MyClasses.swift */,
+				372FB7C11F6918730041D8D5 /* TWId.swift */,
 			);
 			path = MySwift07;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 				372FB7BC1F68BDF80041D8D5 /* enumtest.swift in Sources */,
 				372FB7B51F68BD660041D8D5 /* main.swift in Sources */,
 				372FB7C01F68D6E60041D8D5 /* MyClasses.swift in Sources */,
+				372FB7C21F6918730041D8D5 /* TWId.swift in Sources */,
 				372FB7BE1F68C68B0041D8D5 /* bradapi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

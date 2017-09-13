@@ -143,6 +143,30 @@ class Brad05 {
     }
 }
 
+class Brad06 {
+    static var x:Int!
+    static var x1 = 123
+    static var x2:Int {
+        return x1*100
+    }
+    // non-static => 物件級別 => member 成員
+    var x1 = 321
+    func m1(){
+        print("A")
+        x1 = 111
+        Brad06.x1 = 333
+        Brad06.m1()
+    }
+    static func m1() {
+        print("B")
+        x1 = 222
+        // 無法修改物件級別的 member 或是呼叫
+    }
+    
+    
+}
+
+
 // 以下玩類別物件的繼承關係 => 多型
 // 父類別: Super, 子類別: Sub
 class Super1 {
