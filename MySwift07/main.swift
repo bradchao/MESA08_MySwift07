@@ -122,13 +122,11 @@ print("-----")
 print(b8.x1)
 print(Brad06.x1)
 
-var myId = "A123456789"
-if TWId.isRightId(id: myId) {
-    var id1 = TWId(id: myId)
+if TWId.isRightId(id: "Y120239847") {
+    print("OK")
 }else{
-   var id2 = TWId()
+    print("XX")
 }
-
 
 
 
