@@ -122,11 +122,32 @@ print("-----")
 print(b8.x1)
 print(Brad06.x1)
 
-if TWId.isRightId(id: "Y120239847") {
-    print("OK")
-}else{
-    print("XX")
-}
+let id1 = TWId(area: "B", gender: false)
+print(id1.getId())
+print(id1.gender ? "male" : "female")
+
+let id2 = TWId(gender: false)
+print(id2.getId())
+print(id2.gender ? "male" : "female")
+
+let id3 = TWId(area: "B")
+print(id3.getId())
+print(id3.gender ? "male" : "female")
+
+let id4 = TWId()
+print(id4.getId())
+print(id4.gender ? "male" : "female")
+
+let str = "A123456787"
+let id5:TWId? = TWId(id: str)
+print(id5?.getId())
+
+
+//if TWId.isRightId(id: "Y120239847") {
+//    print("OK")
+//}else{
+//    print("XX")
+//}
 
 
 

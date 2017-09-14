@@ -9,38 +9,59 @@
 import Foundation
 
 class TWId {
+    private static let letters = "ABCDEFGHJKLMNPQRSTUVXYWZIO"
+    
     private var id:String
-    init(){
-        
-        id = "A123456789"
+    var gender:Bool {
+        return BradString.subString(source: id, from: 1, to: 2) == "1"
     }
-    init(area:String){
-        
-        id = "A123456789"
+
+    convenience init(){
+        let rand = arc4random_uniform(2)    // 0,1
+        self.init(gender: rand == 0)
     }
-    init(gender:Bool){
-        id = "A123456789"
+    convenience init(area:String){
+        let rand = arc4random_uniform(2)    // 0,1
+        self.init(area: area, gender: rand == 0)
+    }
+    convenience init(gender:Bool){
+        let rand = Int(arc4random_uniform(26))   // 0...25
+        let areaId = BradString.subString(source: TWId.letters, from: rand, to: rand + 1)
+        self.init(area: areaId, gender: gender)
     }
     init(area:String, gender:Bool){
+        id = area
+        id += (gender) ? "1" : "2"
         
-        id = "A123456789"
-    }
-    init(id:String){
+        for _ in 3...9 {
+            id += String(arc4random_uniform(10))
+        }
         
-        self.id = id
+        for c in 0...9 {
+            if TWId.isRightId(id: id + String(c)) {
+                id += String(c)
+                break
+            }
+        }
     }
+    
+    init?(id:String){
+        if TWId.isRightId(id: id) {
+            self.id = id
+        }else {
+            return nil
+        }
+    }
+    
+    func getId() -> String {return id}
+    
     func getArea() -> String {
         
         return "台中市"
     }
-    func getGender() -> Bool {
-        
-        return true
-    }
     static func isRightId(id:String) -> Bool {
         var isRight = false;
         if let _ = id.range(of: "^[A-Z][12][0-9]{8}$", options: .regularExpression){
-            let letters = "ABCDEFGHJKLMNPQRSTUVXYWZIO"
             
             let cs = Array(id.characters)   // Array<Character>
             
